@@ -11,13 +11,13 @@ function fetchSafetyChecks() {
 }
 
 test('returns the correct number of inspections', async () => {
-    // Call the function that fetches the inspections
+    // Call the function that fetches 
     const safetyChecks = fetchSafetyChecks()
     expect(safetyChecks.length).toBe(5); // Expected number of records is 5
   });
 
   test('returns the status of each inspection', async () => {
-    // Call the function that fetches the inspections
+    // Call the function that fetches 
     const safetyChecks = fetchSafetyChecks()
     expect(safetyChecks[0].status).toBe('Complete'); 
     expect(safetyChecks[1].status).toBe('Incomplete');
